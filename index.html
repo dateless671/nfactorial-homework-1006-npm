@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="main">
+    <header>
+        <p>Mad Libs</p>
+    </header>
+
+    <div class="container">
+        <div class="navigation">
+            <h1 id="buttons">
+                <button onclick="setWhiteTheme()">White</button>
+                <button onclick="setDarkTheme()">Black</button>
+                <button id="cookie" onclick="addCookie()">Cookie</button>
+            </h1>
+            <a id="mad">Mad Libs</a>
+            <a id="tom">Tom Thumbs</a>
+        </div>
+        <div class="container-inner">
+            <div class = "mad-libs">
+                <div class="input">1st Character:<input type="text" id="name"></div>
+                <div class="input">2nd Character:<input type="text" id="name2"></div>
+                <div class="input">Verb:<input type="text" id="verb"></div>
+                <div class="input">Adverb:<input type="text" id="adverb"></div>
+                <button id="btn-first">Generate a story!</button>
+            </div>
+            <div class="output"></div>
+        </div>
+        <div class="container2">
+            <div class = "tom-thumbs">
+                <div class="input">Image width:<input type="text" id="width"></div>
+                <div class="input">Image heigth:<input type="text" id="heigth"></div>
+                <div class="input">Colors:<input type="text" id="colors"></div>
+                <button id="btn-second">Calculate!</button>
+            </div>
+            <div class="output2"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
